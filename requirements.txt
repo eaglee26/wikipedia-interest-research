@@ -1,0 +1,5 @@
+# Runtime dependencies (pip fallback). With uv, the same set is declared inline in
+# scripts/wiki.py (PEP 723) and pinned in scripts/wiki.py.lock.
+numpy>=1.26,<3
+matplotlib>=3.8,<4
+certifi>=2024.2.2

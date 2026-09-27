@@ -1,0 +1,11 @@
+# runtime output and caches
+wiki-research/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+# eval scratch (committed summaries live in evals/results/)
+evals/workspace/
+.DS_Store

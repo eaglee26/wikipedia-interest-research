@@ -1,0 +1,107 @@
+{
+ "entities": {
+  "Q1666254": {
+   "type": "item",
+   "id": "Q1666254",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "intermittent fasting"
+    },
+    "uk": {
+     "language": "uk",
+     "value": "Інтервальне голодування"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "a diet that cycles between a period of fasting and non-fasting"
+    }
+   },
+   "sitelinks": {
+    "cswiki": {
+     "site": "cswiki",
+     "title": "Přerušovaný půst",
+     "badges": []
+    },
+    "dewiki": {
+     "site": "dewiki",
+     "title": "Intermittierendes Fasten",
+     "badges": []
+    },
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Intermittent fasting",
+     "badges": []
+    },
+    "ukwiki": {
+     "site": "ukwiki",
+     "title": "Інтервальне голодування",
+     "badges": []
+    }
+   }
+  },
+  "Q333": {
+   "type": "item",
+   "id": "Q333",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "astronomy"
+    },
+    "uk": {
+     "language": "uk",
+     "value": "астрономія"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "natural science studying celestial objects and phenomena in the cosmos"
+    },
+    "uk": {
+     "language": "uk",
+     "value": "одна з найдавніших наук, що включає спостереження і пояснення подій, які відбуваються за межами Землі та її атмосфери"
+    }
+   },
+   "sitelinks": {
+    "cswiki": {
+     "site": "cswiki",
+     "title": "Astronomie",
+     "badges": []
+    },
+    "dewiki": {
+     "site": "dewiki",
+     "title": "Astronomie",
+     "badges": []
+    },
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Astronomy",
+     "badges": [
+      "Q17437798"
+     ]
+    },
+    "plwiki": {
+     "site": "plwiki",
+     "title": "Astronomia",
+     "badges": [
+      "Q17437798"
+     ]
+    },
+    "skwiki": {
+     "site": "skwiki",
+     "title": "Astronómia",
+     "badges": []
+    },
+    "ukwiki": {
+     "site": "ukwiki",
+     "title": "Астрономія",
+     "badges": []
+    }
+   }
+  }
+ },
+ "success": 1
+}

@@ -1,0 +1,64 @@
+{
+ "searchinfo": {
+  "search": "Mercury"
+ },
+ "search": [
+  {
+   "id": "Q613883",
+   "title": "Q613883",
+   "label": "Mercury",
+   "description": "automobile marque of the Ford Motor Company",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Mercury"
+   }
+  },
+  {
+   "id": "Q1231263",
+   "title": "Q1231263",
+   "label": "Mercury",
+   "description": "commune in Savoie, France",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Mercury"
+   }
+  },
+  {
+   "id": "Q308",
+   "title": "Q308",
+   "label": "Mercury",
+   "description": "first planet from the Solar System and smallest among all, tellurian and with extreme temperatures",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Mercury"
+   }
+  },
+  {
+   "id": "Q165745",
+   "title": "Q165745",
+   "label": "Mercury Records",
+   "description": "American record label",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Mercury Records"
+   }
+  },
+  {
+   "id": "Q925",
+   "title": "Q925",
+   "label": "mercury",
+   "description": "chemical element with symbol Hg and atomic number 80",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "mercury"
+   }
+  }
+ ],
+ "search-continue": 5,
+ "success": 1
+}

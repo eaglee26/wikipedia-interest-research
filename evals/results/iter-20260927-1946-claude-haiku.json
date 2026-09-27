@@ -1,0 +1,234 @@
+{
+ "iteration": "iter-20260927-1946",
+ "harness": "claude",
+ "model": "haiku",
+ "date": "2026-09-27T19:57:12+00:00",
+ "results": [
+  {
+   "case": "if-pl-cs",
+   "config": "with_skill",
+   "duration_s": 51.6,
+   "cost_usd": 0.0452,
+   "tool_calls": 3,
+   "turns": [
+    5
+   ],
+   "passed": 8,
+   "total": 8,
+   "pass_rate": 1.0
+  },
+  {
+   "case": "if-pl-cs",
+   "config": "without_skill",
+   "duration_s": 26.1,
+   "cost_usd": 0.0456,
+   "tool_calls": 7,
+   "turns": [
+    8
+   ],
+   "passed": 2,
+   "total": 8,
+   "pass_rate": 0.25
+  },
+  {
+   "case": "astronomy-uk",
+   "config": "with_skill",
+   "duration_s": 30.5,
+   "cost_usd": 0.0382,
+   "tool_calls": 2,
+   "turns": [
+    4
+   ],
+   "passed": 8,
+   "total": 8,
+   "pass_rate": 1.0
+  },
+  {
+   "case": "astronomy-uk",
+   "config": "without_skill",
+   "duration_s": 48.7,
+   "cost_usd": 0.0808,
+   "tool_calls": 12,
+   "turns": [
+    8
+   ],
+   "passed": 3,
+   "total": 8,
+   "pass_rate": 0.375
+  },
+  {
+   "case": "english-langs-report",
+   "config": "with_skill",
+   "duration_s": 57.6,
+   "cost_usd": 0.0631,
+   "tool_calls": 6,
+   "turns": [
+    8
+   ],
+   "passed": 7,
+   "total": 8,
+   "pass_rate": 0.875
+  },
+  {
+   "case": "english-langs-report",
+   "config": "without_skill",
+   "duration_s": 188.7,
+   "cost_usd": 0.1994,
+   "tool_calls": 14,
+   "turns": [
+    15
+   ],
+   "passed": 3,
+   "total": 8,
+   "pass_rate": 0.375
+  },
+  {
+   "case": "followup-chess",
+   "config": "with_skill",
+   "duration_s": 78.8,
+   "cost_usd": 0.1953,
+   "tool_calls": 8,
+   "turns": [
+    5,
+    3,
+    4
+   ],
+   "passed": 8,
+   "total": 9,
+   "pass_rate": 0.889
+  },
+  {
+   "case": "followup-chess",
+   "config": "without_skill",
+   "duration_s": 30.7,
+   "cost_usd": 0.1137,
+   "tool_calls": 2,
+   "turns": [
+    3,
+    1,
+    1
+   ],
+   "passed": 3,
+   "total": 9,
+   "pass_rate": 0.333
+  },
+  {
+   "case": "ambiguous-mercury-en",
+   "config": "with_skill",
+   "duration_s": 29.6,
+   "cost_usd": 0.0414,
+   "tool_calls": 3,
+   "turns": [
+    5
+   ],
+   "passed": 6,
+   "total": 7,
+   "pass_rate": 0.857
+  },
+  {
+   "case": "ambiguous-mercury-en",
+   "config": "without_skill",
+   "duration_s": 20.4,
+   "cost_usd": 0.0368,
+   "tool_calls": 4,
+   "turns": [
+    5
+   ],
+   "passed": 2,
+   "total": 7,
+   "pass_rate": 0.286
+  },
+  {
+   "case": "casual-yoga-en",
+   "config": "with_skill",
+   "duration_s": 25.2,
+   "cost_usd": 0.0395,
+   "tool_calls": 3,
+   "turns": [
+    5
+   ],
+   "passed": 7,
+   "total": 7,
+   "pass_rate": 1.0
+  },
+  {
+   "case": "casual-yoga-en",
+   "config": "without_skill",
+   "duration_s": 13.4,
+   "cost_usd": 0.0285,
+   "tool_calls": 2,
+   "turns": [
+    3
+   ],
+   "passed": 3,
+   "total": 7,
+   "pass_rate": 0.429
+  },
+  {
+   "case": "negative-write-article",
+   "config": "with_skill",
+   "duration_s": 6.2,
+   "cost_usd": 0.0183,
+   "tool_calls": 0,
+   "turns": [
+    1
+   ],
+   "passed": 2,
+   "total": 2,
+   "pass_rate": 1.0
+  },
+  {
+   "case": "negative-write-article",
+   "config": "without_skill",
+   "duration_s": 7.2,
+   "cost_usd": 0.0189,
+   "tool_calls": 0,
+   "turns": [
+    1
+   ],
+   "passed": 2,
+   "total": 2,
+   "pass_rate": 1.0
+  }
+ ],
+ "benchmark": {
+  "with_skill": {
+   "cases": 7,
+   "pass_rate": {
+    "mean": 0.946,
+    "stddev": 0.063
+   },
+   "duration_s": {
+    "mean": 39.929,
+    "stddev": 22.391
+   },
+   "tool_calls": {
+    "mean": 3.571,
+    "stddev": 2.441
+   },
+   "cost_usd": {
+    "mean": 0.063,
+    "stddev": 0.055
+   }
+  },
+  "without_skill": {
+   "cases": 7,
+   "pass_rate": {
+    "mean": 0.435,
+    "stddev": 0.237
+   },
+   "duration_s": {
+    "mean": 47.886,
+    "stddev": 58.797
+   },
+   "tool_calls": {
+    "mean": 5.857,
+    "stddev": 4.969
+   },
+   "cost_usd": {
+    "mean": 0.075,
+    "stddev": 0.059
+   }
+  }
+ }
+}

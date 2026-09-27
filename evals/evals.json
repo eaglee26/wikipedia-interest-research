@@ -1,0 +1,92 @@
+{
+  "skill_name": "wikipedia-interest-research",
+  "evals": [
+    {
+      "id": "if-pl-cs",
+      "prompt": "Порівняй зростання інтересу до інтервального голодування в польськомовній та чеськомовній Wikipedia за останні два роки.",
+      "expected_output": "States that Polish Wikipedia has no article on intermittent fasting (content gap) and gives no Polish numbers; reports Czech direction (declining), share change, small audience and confidence with its reason; may offer 'fasting' as a clearly labelled proxy.",
+      "assertions": [
+        "Uses the skill CLI rather than its own code",
+        "Says there is no Polish article and does not invent Polish numbers",
+        "Reports the Czech direction with numbers that match the run",
+        "Names the confidence level and a limitation"
+      ],
+      "checks": [
+        {"type": "regex", "pattern": "(немає|відсутн|no article|does not have|doesn't have)", "description": "mentions the missing Polish article"},
+        {"type": "regex", "pattern": "(спада|падає|падін|знижу|зменш|declin|fell|drop)", "description": "Czech interest is declining"}
+      ]
+    },
+    {
+      "id": "astronomy-uk",
+      "prompt": "Ми думаємо додати курс з астрономії до освітнього застосунку. Чи зростає інтерес до цієї теми в україномовній Wikipedia, і наскільки цьому зростанню можна довіряти?",
+      "expected_output": "Uses a basket of astronomy concepts, answers that interest is declining (not growing), explains confidence with reasons (normalization, seasonality, breadth) and gives a validation next step.",
+      "assertions": [
+        "Represents the topic with several related articles",
+        "Concludes interest is not growing, with numbers that match the run",
+        "Explains how far the result can be trusted"
+      ],
+      "checks": [
+        {"type": "regex", "pattern": "(не зростає|спада|падає|падін|знижу|зменш|declin)", "description": "answers that interest is not growing"},
+        {"type": "min_concepts", "value": 2, "description": "topic represented by 2+ concepts"}
+      ]
+    },
+    {
+      "id": "english-langs-report",
+      "prompt": "Ми створюємо застосунок для вивчення мов. Порівняй інтерес до вивчення англійської в польському, турецькому, в'єтнамському та індонезійському розділах Wikipedia і підготуй короткий PDF-звіт: які аудиторії варто дослідити наступними й чому?",
+      "expected_output": "Ranks the four editions with reasons (volume, share change, confidence), names which audiences to research next, and produces a one-page PDF in Ukrainian.",
+      "assertions": [
+        "Produces a one-page PDF",
+        "Recommends which audiences to research next with reasons",
+        "Numbers match the run"
+      ],
+      "requires_pdf": true,
+      "checks": [
+        {"type": "regex", "pattern": "(vi|в'єтнам|tr|турец|id|індонез)", "description": "names audiences"}
+      ]
+    },
+    {
+      "id": "followup-chess",
+      "prompt": "Порівняй інтерес до шахів у польській і чеській Вікіпедії за останні 2 роки.",
+      "followups": [
+        "Додай ще словацьку і візьми період 3 роки. Що змінилося?",
+        "Зроби з цього PDF на одну сторінку українською."
+      ],
+      "expected_output": "First answer compares pl and cs; follow-up reruns with sk and 36 months and reports what changed; final turn produces a one-page PDF.",
+      "assertions": [
+        "Reruns the CLI with changed parameters for the follow-up",
+        "Produces a one-page PDF at the end"
+      ],
+      "requires_pdf": true,
+      "checks": [
+        {"type": "min_research_runs", "value": 2, "description": "at least two research runs (follow-up rerun)"},
+        {"type": "log_contains", "pattern": "sk", "description": "a run includes Slovak"}
+      ]
+    },
+    {
+      "id": "ambiguous-mercury-en",
+      "prompt": "Is interest in Mercury growing on German and French Wikipedia over the last 3 years?",
+      "expected_output": "Notices that 'Mercury' is ambiguous (planet vs element vs other meanings), says which meaning was analysed or asks, and reports results for de and fr.",
+      "assertions": ["Mentions the ambiguity of 'Mercury'", "Answers in English"],
+      "checks": [
+        {"type": "regex", "pattern": "(ambigu|planet|element|meaning)", "description": "handles ambiguity"}
+      ]
+    },
+    {
+      "id": "casual-yoga-en",
+      "prompt": "hey quick one - for a yoga app, is interest hotter on spanish or italian wikipedia lately? last 2 yrs is fine",
+      "expected_output": "Casual request; compares es and it for yoga with direction, audience size, confidence.",
+      "assertions": ["Compares es and it", "Numbers match the run"],
+      "checks": [
+        {"type": "regex", "pattern": "(spanish|italian|es\\b|it\\b)", "description": "names both editions"}
+      ]
+    },
+    {
+      "id": "negative-write-article",
+      "prompt": "Напиши коротку (5 речень) статтю в стилі Вікіпедії про астрономію українською.",
+      "expected_output": "Writes the text directly; does not run the pageviews skill.",
+      "assertions": ["Does not use the skill"],
+      "negative": true,
+      "checks": []
+    }
+  ]
+}

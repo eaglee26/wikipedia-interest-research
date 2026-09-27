@@ -1,0 +1,11 @@
+[
+  {
+    "id": "bot_reclassification_2025",
+    "start": "2025-03",
+    "end": "2025-08",
+    "scope": "all Wikimedia projects",
+    "en": "Wikimedia updated its bot detection in May 2025 and reclassified March–August 2025 traffic; 'user' views before and after this period are not perfectly comparable.",
+    "uk": "У травні 2025 Wikimedia оновила детекцію ботів і перекласифікувала трафік за березень–серпень 2025; перегляди 'user' до і після цього періоду не ідеально порівнянні.",
+    "source": "https://diff.wikimedia.org/2025/10/17/new-user-trends-on-wikipedia/"
+  }
+]

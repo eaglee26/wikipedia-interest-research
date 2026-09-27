@@ -1,0 +1,10 @@
+{
+  "language": "uk",
+  "headline": "ONE sentence with the answer, max 120 characters",
+  "answer": "2-3 sentences, max 560 characters: direction, share change and audience size per language, confidence and its main reason. Use only numbers printed by `wiki.py research`.",
+  "recommendation": "Max 380 characters: what to do next (which topic/language to validate and how), phrased as a decision aid, not a guarantee.",
+  "next_steps": [
+    "Concrete validation step, max 140 characters",
+    "Optional second step"
+  ]
+}

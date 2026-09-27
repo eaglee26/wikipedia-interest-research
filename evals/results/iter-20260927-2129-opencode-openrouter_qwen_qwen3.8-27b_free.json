@@ -1,0 +1,68 @@
+{
+ "iteration": "iter-20260927-2129",
+ "harness": "opencode",
+ "model": "openrouter/qwen/qwen3.8-27b:free",
+ "date": "2026-09-27T21:36:13+00:00",
+ "results": [
+  {
+   "case": "if-pl-cs",
+   "config": "with_skill",
+   "duration_s": 155.0,
+   "cost_usd": 0,
+   "tool_calls": 8,
+   "turns": [
+    null
+   ],
+   "passed": 8,
+   "total": 8,
+   "pass_rate": 1.0
+  },
+  {
+   "case": "astronomy-uk",
+   "config": "with_skill",
+   "duration_s": 93.0,
+   "cost_usd": 0,
+   "tool_calls": 2,
+   "turns": [
+    null
+   ],
+   "passed": 7,
+   "total": 8,
+   "pass_rate": 0.875
+  },
+  {
+   "case": "casual-yoga-en",
+   "config": "with_skill",
+   "duration_s": 126.3,
+   "cost_usd": 0,
+   "tool_calls": 2,
+   "turns": [
+    null
+   ],
+   "passed": 4,
+   "total": 7,
+   "pass_rate": 0.571
+  }
+ ],
+ "benchmark": {
+  "with_skill": {
+   "cases": 3,
+   "pass_rate": {
+    "mean": 0.815,
+    "stddev": 0.18
+   },
+   "duration_s": {
+    "mean": 124.767,
+    "stddev": 25.335
+   },
+   "tool_calls": {
+    "mean": 4,
+    "stddev": 2.828
+   },
+   "cost_usd": {
+    "mean": 0,
+    "stddev": 0.0
+   }
+  }
+ }
+}

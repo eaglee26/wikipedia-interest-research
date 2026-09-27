@@ -1,0 +1,37 @@
+{
+ "batchcomplete": true,
+ "query": {
+  "pages": [
+   {
+    "pageid": 10,
+    "ns": 0,
+    "title": "Astronomie",
+    "redirects": [
+     {
+      "pageid": 155519,
+      "ns": 0,
+      "title": "Hvězdářství"
+     },
+     {
+      "pageid": 254358,
+      "ns": 0,
+      "title": "Hvězdář"
+     },
+     {
+      "pageid": 1322215,
+      "ns": 0,
+      "title": "Hvězdoprava"
+     }
+    ]
+   },
+   {
+    "pageid": 1632302,
+    "ns": 0,
+    "title": "Přerušovaný půst"
+   }
+  ]
+ },
+ "limits": {
+  "redirects": 500
+ }
+}

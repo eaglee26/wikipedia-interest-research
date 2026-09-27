@@ -1,0 +1,74 @@
+{
+ "entities": {
+  "Q44602": {
+   "type": "item",
+   "id": "Q44602",
+   "labels": {
+    "uk": {
+     "language": "uk",
+     "value": "піст"
+    },
+    "en": {
+     "language": "en",
+     "value": "fasting"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "willing abstinence from some, or reduced consumption of, food, drink or both, for a period of time"
+    }
+   },
+   "sitelinks": {
+    "cswiki": {
+     "site": "cswiki",
+     "title": "Půst",
+     "badges": []
+    },
+    "plwiki": {
+     "site": "plwiki",
+     "title": "Post",
+     "badges": []
+    },
+    "ukwiki": {
+     "site": "ukwiki",
+     "title": "Піст",
+     "badges": []
+    }
+   }
+  },
+  "Q474191": {
+   "type": "item",
+   "id": "Q474191",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "diet"
+    },
+    "uk": {
+     "language": "uk",
+     "value": "дієта"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "sum of food consumed by an organism"
+    }
+   },
+   "sitelinks": {
+    "plwiki": {
+     "site": "plwiki",
+     "title": "Dieta",
+     "badges": []
+    },
+    "ukwiki": {
+     "site": "ukwiki",
+     "title": "Дієта",
+     "badges": []
+    }
+   }
+  }
+ },
+ "success": 1
+}
